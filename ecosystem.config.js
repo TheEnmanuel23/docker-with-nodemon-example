@@ -11,6 +11,6 @@ module.exports = {
     },
     output: './out.log',
     error: './error.log',
-    log: './combined.outrr.log'
+    log: './combined.outrr.log' 
   }],
 };
