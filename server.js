@@ -6,10 +6,12 @@ const PORT = process.env.PORT || 8080;
 app.get('/', (req, res) => {
   res.sendfile(`${__dirname}/index.html`)
 });
-var a = 1;
-var b = 0;
-var r = a/b;
-console.log(r)
+
+app.get('/getdata', (req, res) => {
+  let a = 12;
+  res.json({ ok: true });
+});
+
 app.listen(PORT, (err) => {
 
   if (err) {
