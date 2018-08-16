@@ -1,0 +1,14 @@
+version: '3.6'
+
+services:
+  app: 
+    build: .
+    ports:
+      - "3000:8080" 
+      - "9229:9229"
+    command:
+      - nodemon
+      - "--inspect=0.0.0.0"
+      - "server.js"
+    volumes:
+      - .:/app

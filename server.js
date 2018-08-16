@@ -9,7 +9,8 @@ app.get('/', (req, res) => {
 
 app.get('/getdata', (req, res) => {
   let a = 12;
-  res.json({ ok: true });
+  let c = 12;
+  res.json({ result: a + c});
 });
 
 app.listen(PORT, (err) => {
